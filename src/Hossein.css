@@ -1,0 +1,158 @@
+.navbar {
+	height: 50px;
+	width: 100%;
+	background: rgb(38, 38, 40);
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	font-size: 1.2rem;
+	position: fixed;
+}
+
+.nav-logo {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 20px;
+	list-style: none;
+	
+}
+
+.nav-link {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s all;
+}
+
+.nav-link:hover {
+	color: black;
+}
+
+.nav-icon {
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+	.navbar {
+		position: relative;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s all;
+	}
+
+	.nav-links.active {
+		background: rgb(38, 38, 40);
+		left: 0;
+	
+	}
+
+	.nav-item {
+		padding: 10px 0;
+		
+	}
+
+	.nav-icon {
+		display: flex;
+	}
+}
+
+footer{
+    background-color: rgb(38, 38, 40);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.f-icons{
+    padding: 10px;
+}
+
+
+
+.about{
+   
+    width: 100%;
+    height: 200px;
+    display: flex;
+	flex-direction: column;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    background: rgb(255, 255, 255);
+    color: black;
+	
+    
+}
+
+
+
+h2{
+    font-size: 40px;
+   padding-left: 20px;
+    padding-top: 30px;
+}
+
+p{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.skills{
+
+	width: 100%;
+    height: 200px;
+    display: flex;
+	flex-direction: column;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.my-skills{
+	padding-bottom: 20px;
+	font-size: 40px;
+   padding-left: 20px;
+    padding-top: 30px;
+}
+
+
+.list-group-item{
+	font-size: 20px;
+    padding: 10px;
+	padding-left: 50px;
+	border-bottom: 1px rgb(43, 42, 42) solid;
+}
+
+.contact{
+	flex-direction: column;
+	display: block;
+	padding: 10px;
+}
